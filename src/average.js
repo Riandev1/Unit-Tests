@@ -19,12 +19,12 @@ function average(array) {
   let leet = 0;
   let count = 0;
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i += 1) {
     if (typeof array[i] !== 'number') {
       return undefined;
     }
     leet += array[i];
-    count++;
+    count += 1;
   }
 
   return Math.round(leet / count);

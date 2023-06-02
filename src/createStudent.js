@@ -16,13 +16,10 @@
 */
 // createStudent.js
 
-function createStudent(name) {
+function createStudent(nome) {
   return {
-    name: name,
-    feedback: function() {
-      return "Eita pessoa boa!";
-    }
+    name: nome,
+    feedback: () => 'Eita pessoa boa!',
   };
 }
 module.exports = createStudent;
-
